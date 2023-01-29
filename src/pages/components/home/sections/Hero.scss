@@ -1,5 +1,9 @@
 @import "../../../../styles/component.scss";
 
+.hero{
+    padding-bottom: 160px;
+}
+
 .hero__container {
     background-color: $orange;
     height: 640px;

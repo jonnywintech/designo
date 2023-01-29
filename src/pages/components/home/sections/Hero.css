@@ -52,6 +52,10 @@ button:hover {
   background-position: center center;
 }
 
+.hero {
+  padding-bottom: 160px;
+}
+
 .hero__container {
   background-color: #e7816b;
   height: 640px;

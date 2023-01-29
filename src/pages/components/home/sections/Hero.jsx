@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
           <div className='hero__image-container'>
             <div className='hero__image-wrapper'>
-              <img lassName='hero__image' src={image.heroPhone} alt='phone' />
+              <img className='hero__image' src={image.heroPhone} alt='phone' />
             </div>
           </div>
         </div>
