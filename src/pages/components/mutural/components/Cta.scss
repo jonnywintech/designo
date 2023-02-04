@@ -1,0 +1,57 @@
+@import "../../../../styles/component.scss";
+.cta {
+    margin-bottom: -80px;
+}
+
+.cta__container {
+    padding: 50px 100px;
+    border-radius: 15px;
+    background-color: $orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta__content {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cta__title {
+    width: 13ch;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.cta__text {
+    width: 49ch;
+    word-wrap:break-word;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.cta__button {
+    background: $white;
+    border-radius: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 0 20px;
+    transition: 0.3s ease-in-out;
+    transition-property: color, background-color;
+    &:hover {
+        transition: 0.3s ease;
+        background: $btnHover;
+        color: $white;
+        transform: scale(1.09);
+    }
+    &:active {
+        transition: all 0.3s ease;
+
+        transform: scale(0.9);
+    }
+}

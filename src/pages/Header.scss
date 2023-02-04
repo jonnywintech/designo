@@ -28,6 +28,12 @@
 .header__link {
     text-decoration: none;
     color: #000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        text-decoration: underline;
+        transition: 0.3s ease-in-out;
+    }
 }
 
 

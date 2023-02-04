@@ -52,43 +52,58 @@ button:hover {
   background-position: center center;
 }
 
-.header__container {
-  padding: 64px 0;
+.cta {
+  margin-bottom: -80px;
+}
+
+.cta__container {
+  padding: 50px 100px;
+  border-radius: 15px;
+  background-color: #e7816b;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  justify-content: space-between;
-}
-
-.header__nav {
-  width: 100%;
-  max-width: 450px;
-  display: flex;
-}
-
-.header__logo-image {
-  max-width: 196px;
-}
-
-.header__list {
-  width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
-.header__link {
-  text-decoration: none;
-  color: #000;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+.cta__content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.header__link:hover {
-  text-decoration: underline;
+
+.cta__title {
+  width: 13ch;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.cta__text {
+  width: 49ch;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.cta__button {
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0 20px;
   transition: 0.3s ease-in-out;
-}/*# sourceMappingURL=Header.css.map */
+  transition-property: color, background-color;
+}
+.cta__button:hover {
+  transition: 0.3s ease;
+  background: #ffad9b;
+  color: #fff;
+  transform: scale(1.09);
+}
+.cta__button:active {
+  transition: all 0.3s ease;
+  transform: scale(0.9);
+}/*# sourceMappingURL=Cta.css.map */

@@ -89,6 +89,12 @@ button:hover {
 .footer__top-link {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.footer__top-link:hover {
+  text-decoration: underline;
+  transition: 0.3s ease-in-out;
 }
 
 .footer__splitter {
