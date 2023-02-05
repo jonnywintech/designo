@@ -15,6 +15,7 @@
     @include breakpoint(touch) {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 0;
     }
 }
 
@@ -30,6 +31,9 @@
 
 .footer__logo-image {
     max-width: 196px;
+    @include breakpoint(touch) {
+        padding: 20px 0 50px 0;
+    }
 }
 
 .footer__top-list {
@@ -59,6 +63,9 @@
 
 .footer__splitter {
     opacity: 0.5;
+    @include breakpoint(touch){
+        display: none;
+    }
 }
 
 .footer__bottom {
@@ -94,6 +101,9 @@
 .footer__social {
     display: flex;
     gap: 16px;
+    @include breakpoint(touch) {
+        padding-top: 30px;
+    }
 }
 
 .footer__icon {
@@ -101,6 +111,3 @@
     height: 24px;
 }
 
-// gap 16 px icons
-
-// 24 x 24

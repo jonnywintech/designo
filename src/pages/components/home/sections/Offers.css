@@ -55,6 +55,11 @@ button:hover {
 .offers {
   padding-bottom: 200px;
 }
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .offers {
+    padding-bottom: 100px;
+  }
+}
 
 .offers__container {
   display: grid;

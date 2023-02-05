@@ -1,13 +1,24 @@
-import React from 'react';
+import React ,{useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/shared/desktop/logo-dark.png';
 import './Header.css';
 
 const Header = () => {
-  const [showMenu, setShowMenu] = React.useState(false);
+  const [showMenu, setShowMenu] = useState(false);
   const toggleBurger = () => {
     setShowMenu(prev =>!prev);
   }
+  useEffect(() => {
+    window.addEventListener("scroll", handleWindowScroll);
+    return () => {
+      window.removeEventListener("scroll", handleWindowScroll);
+    };
+  }, []);
+
+  const handleWindowScroll = () => {
+    setShowMenu(false);
+  };
+  
   return (
     <div className='header'>
       <div className='wrap'>

@@ -1,6 +1,9 @@
 @import "../../../../styles/component.scss";
 .cta {
     margin-bottom: -80px;
+    @include breakpoint(touch){
+        margin: 0 50px -80px 50px;
+    }
 }
 
 .cta__container {
@@ -13,6 +16,8 @@
     align-items: center;
     @include breakpoint(touch){
         flex-direction: column;
+        text-align: center;
+        padding: 50px 20px
     }
 }
 
@@ -23,18 +28,19 @@
     gap: 20px;
     @include breakpoint(touch){
         padding-bottom: 25px;
+        align-items: center;
     }
 }
 
 .cta__title {
-    width: 13ch;
+    max-width: 13ch;
     font-weight: 500;
     font-size: 40px;
     line-height: 40px;
 }
 
 .cta__text {
-    width: 49ch;
+    max-width: 49ch;
     word-wrap:break-word;
     font-size: 16px;
     line-height: 26px;

@@ -69,6 +69,7 @@ button:hover {
   .footer__top {
     flex-direction: column;
     align-items: center;
+    padding-bottom: 0;
   }
 }
 
@@ -86,6 +87,11 @@ button:hover {
 
 .footer__logo-image {
   max-width: 196px;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .footer__logo-image {
+    padding: 20px 0 50px 0;
+  }
 }
 
 .footer__top-list {
@@ -117,6 +123,11 @@ button:hover {
 
 .footer__splitter {
   opacity: 0.5;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .footer__splitter {
+    display: none;
+  }
 }
 
 .footer__bottom {
@@ -156,6 +167,11 @@ button:hover {
 .footer__social {
   display: flex;
   gap: 16px;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .footer__social {
+    padding-top: 30px;
+  }
 }
 
 .footer__icon {

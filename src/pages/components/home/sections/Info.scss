@@ -1,6 +1,9 @@
 @import '../../../../styles/component.scss';
 .info {
     padding-bottom: 150px;
+    @include breakpoint(touch){
+        padding-bottom: 80px;
+    }
 }
 .info__container {
     width: 100%;

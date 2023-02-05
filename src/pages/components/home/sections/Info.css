@@ -55,6 +55,11 @@ button:hover {
 .info {
   padding-bottom: 150px;
 }
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .info {
+    padding-bottom: 80px;
+  }
+}
 
 .info__container {
   width: 100%;

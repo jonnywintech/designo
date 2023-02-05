@@ -55,6 +55,11 @@ button:hover {
 .cta {
   margin-bottom: -80px;
 }
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .cta {
+    margin: 0 50px -80px 50px;
+  }
+}
 
 .cta__container {
   padding: 50px 100px;
@@ -68,6 +73,8 @@ button:hover {
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .cta__container {
     flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
   }
 }
 
@@ -80,18 +87,19 @@ button:hover {
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .cta__content {
     padding-bottom: 25px;
+    align-items: center;
   }
 }
 
 .cta__title {
-  width: 13ch;
+  max-width: 13ch;
   font-weight: 500;
   font-size: 40px;
   line-height: 40px;
 }
 
 .cta__text {
-  width: 49ch;
+  max-width: 49ch;
   word-wrap: break-word;
   font-size: 16px;
   line-height: 26px;

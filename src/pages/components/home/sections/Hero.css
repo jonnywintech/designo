@@ -58,6 +58,7 @@ button:hover {
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .hero {
     overflow: hidden;
+    padding-bottom: 50px;
   }
   .hero .wrap {
     padding: 0;
@@ -74,7 +75,7 @@ button:hover {
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .hero__container {
     flex-direction: column;
-    padding: 50px 0 0 0;
+    padding: 100px 0 0 0;
     height: initial;
     justify-content: center;
     align-items: center;
