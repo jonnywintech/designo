@@ -10,7 +10,7 @@ const Main = () => {
     <div>
         <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="/our-company" element={<OurCompany />}/>
+            <Route path="/about-us" element={<OurCompany />}/>
             <Route path="/locations" element={<Locations />}/>
             <Route path="/contact-us" element={<Contact />}/>
         </Routes>

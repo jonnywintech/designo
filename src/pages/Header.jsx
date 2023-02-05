@@ -36,7 +36,7 @@ const Header = () => {
           <div className={showMenu?'header__nav header__nav--open':'header__nav'}>
             <ul className='header__list'>
               <li className='header__item'>
-                <Link to='/our-company' className='header__link'>Our Company</Link>
+                <Link to='/about-us' className='header__link'>Our Company</Link>
               </li>
               <li className='header__item'>
                 <Link to='/locations' className='header__link'>Locations</Link>

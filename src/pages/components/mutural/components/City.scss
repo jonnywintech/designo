@@ -1,0 +1,29 @@
+@import "../../../../styles/component.scss";
+
+.city__image {
+    background-image: url("./src/assets/shared/desktop/bg-pattern-small-circle.svg");
+}
+
+.city__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city__name {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 30px 0 40px;
+}
+
+.city__button {
+    background-color: $orange;
+    color: white;
+    border: none;
+    width: 152px;
+    height: 52px;
+    border-radius: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+}

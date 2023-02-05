@@ -1,0 +1,123 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.wrap {
+  max-width: 1111px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .wrap {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .wrap {
+    padding: 0;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  background: none;
+  height: 200px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.has-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.talent {
+  padding-bottom: 150px;
+}
+
+.talent__container {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .talent__container {
+    flex-direction: column;
+  }
+}
+
+.talent__image {
+  padding: 320px 0;
+  background-image: url("./src/assets/about/desktop/image-world-class-talent.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 45%;
+  border-radius: 15px 0 0 15px;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .talent__image {
+    padding: 160px 0;
+    border-radius: initial;
+    background-position: center center;
+  }
+}
+
+.talent__content {
+  flex-basis: 55%;
+  padding: 0 90px;
+  background-color: #fdf3f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .talent__content {
+    border-radius: initial;
+    padding: 70px 0;
+    text-align: center;
+  }
+}
+
+.talent__title {
+  font-size: 40px;
+  color: #e7816b;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+
+.talent__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333136;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .talent__text {
+    max-width: 37ch;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=Talent.css.map */
