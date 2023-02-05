@@ -19,12 +19,12 @@ h1 {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .wrap {
-    padding: 0 24px;
+    padding: 0;
   }
 }
 @media only screen and (min-width: 120px) and (max-width: 767px) {
   .wrap {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 

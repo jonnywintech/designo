@@ -4,7 +4,6 @@ import cardData from './CardData';
 import './Offers.css';
 
 const Offers = () => {
-
     const [forkData,setForkData] = useState(cardData);
 
    const cardElement = forkData.map(data =>{

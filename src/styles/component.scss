@@ -65,10 +65,10 @@ $bold: 700;
   padding: 0 20px;
   position: relative;
   @include breakpoint(tablet) {
-    padding: 0 24px;
+    padding: 0;
   }
   @include breakpoint(phone) {
-    padding: 0 20px;
+    padding: 0;
   }
 }
 

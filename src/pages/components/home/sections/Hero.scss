@@ -1,7 +1,13 @@
 @import "../../../../styles/component.scss";
 
-.hero{
+.hero {
     padding-bottom: 160px;
+    @include breakpoint(touch) {
+        .wrap {
+            padding: 0;
+        }
+        overflow: hidden
+    }
 }
 
 .hero__container {
@@ -10,13 +16,14 @@
     display: flex;
     flex-direction: row;
     border-radius: 20px;
-}
-
-.hero__container::before {
-    content: url("/src/assets/shared/desktop/bg-pattern-leaf.svg");
-    z-index: -1;
-    position: absolute;
-    bottom: 0;
+    @include breakpoint(touch) {
+        flex-direction: column;
+        padding: 50px 0 0 0;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0;
+    }
 }
 
 .hero__content {
@@ -26,6 +33,14 @@
     padding-left: 90px;
     color: $white;
     flex-grow: 1;
+    @include breakpoint(touch) {
+        max-width: 500px;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        text-align: center;
+    }
 }
 
 .hero__title {
@@ -33,6 +48,12 @@
     font-weight: 500;
     line-height: 48px;
     padding-bottom: 10px;
+    @include breakpoint(touch) {
+        font-size: 32px;
+        line-height: 36px;
+        width: 100%;
+        max-width: 20ch;
+    }
 }
 
 .hero__text {
@@ -42,8 +63,13 @@
     font-size: 16px;
     line-height: 26px;
     color: $white;
-
     padding-bottom: 40px;
+    @include breakpoint(touch) {
+        font-size: 16px;
+        line-height: 26px;
+        width: 100%;
+        max-width: 34ch;
+    }
 }
 
 .hero__button {
@@ -82,14 +108,29 @@
     height: 100%;
 }
 
+.hero__image-container {
+    @include breakpoint(touch){
+        overflow: hidden;
+    }
+}
+
 .hero__image-container::after {
     content: url("/src/assets/home/desktop/bg-pattern-hero-home.svg");
     z-index: 1;
     position: absolute;
     top: 0;
     right: 25px;
+    @include breakpoint(touch){
+        left: 50%;
+        top: 5%;
+    }
 }
 
 .hero__image {
     z-index: 2;
+    @include breakpoint(touch){
+        position: relative;
+        margin-bottom: -50%;
+        margin-top: -10%;
+    }
 }

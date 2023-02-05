@@ -1,3 +1,4 @@
+@import '../../../../styles/component.scss';
 .offers {
     padding-bottom: 200px;
 }
@@ -7,4 +8,8 @@
     grid-template-columns:1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
     gap: 24px;
+    @include breakpoint(touch){
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }

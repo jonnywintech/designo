@@ -4,6 +4,10 @@ import logo from '../assets/shared/desktop/logo-dark.png';
 import './Header.css';
 
 const Header = () => {
+  const [showMenu, setShowMenu] = React.useState(false);
+  const toggleBurger = () => {
+    setShowMenu(prev =>!prev);
+  }
   return (
     <div className='header'>
       <div className='wrap'>
@@ -13,7 +17,12 @@ const Header = () => {
               <img src={logo} className='header__logo-image' />
             </Link>
           </div>
-          <div className='header__nav'>
+          <div className={showMenu?"header__burger-btn change":"header__burger-btn"} onClick={()=> toggleBurger()}>
+            <div className="bar1"></div>
+            <div className="bar2"></div>
+            <div className="bar3"></div>
+          </div>
+          <div className={showMenu?'header__nav header__nav--open':'header__nav'}>
             <ul className='header__list'>
               <li className='header__item'>
                 <Link to='/our-company' className='header__link'>Our Company</Link>
