@@ -56,76 +56,75 @@ button:hover {
   background-position: center center;
 }
 
-.cta {
-  margin-bottom: -80px;
+.deal {
+  padding-bottom: 150px;
 }
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
-  .cta {
-    margin: 0 50px -80px 50px;
+  .deal {
+    padding-bottom: 50px;
   }
 }
 
-.cta__container {
-  padding: 50px 100px;
-  border-radius: 15px;
-  background-color: #e7816b;
+.deal__container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
-  .cta__container {
+  .deal__container {
     flex-direction: column;
-    text-align: center;
-    padding: 50px 20px;
   }
 }
 
-.cta__content {
-  color: #fff;
+.deal__image {
+  padding: 320px 0;
+  background-image: url("./src/assets/about/desktop/image-real-deal.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 45%;
+  border-radius: 0 15px 15px 0;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .deal__image {
+    padding: 160px 0;
+    border-radius: initial;
+    background-position: center center;
+    order: 1;
+  }
+}
+
+.deal__content {
+  flex-basis: 55%;
+  padding: 0 90px;
+  background-color: #fdf3f0;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
 }
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
-  .cta__content {
-    padding-bottom: 25px;
-    align-items: center;
+  .deal__content {
+    border-radius: initial;
+    padding: 70px 0;
+    text-align: center;
+    order: 2;
   }
 }
 
-.cta__title {
-  max-width: 13ch;
-  font-weight: 500;
+.deal__title {
   font-size: 40px;
-  line-height: 40px;
+  color: #e7816b;
+  font-weight: 500;
+  padding-bottom: 50px;
 }
 
-.cta__text {
-  max-width: 49ch;
-  word-wrap: break-word;
+.deal__text {
   font-size: 16px;
   line-height: 26px;
+  color: #333136;
 }
-
-.cta__button {
-  background: #fff;
-  border-radius: 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-  height: 50px;
-  padding: 0 20px;
-  transition: 0.3s ease-in-out;
-  transition-property: color, background-color;
-}
-.cta__button:hover {
-  transition: 0.3s ease;
-  background: #ffad9b;
-  color: #fff;
-  transform: scale(1.09);
-}
-.cta__button:active {
-  transition: all 0.3s ease;
-  transform: scale(0.9);
-}/*# sourceMappingURL=Cta.css.map */
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .deal__text {
+    max-width: 37ch;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=Deal.css.map */

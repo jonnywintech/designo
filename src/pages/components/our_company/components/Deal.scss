@@ -1,0 +1,64 @@
+@import "../../../../styles/component.scss";
+
+.deal {
+    padding-bottom: 150px;
+    @include breakpoint(touch){
+        padding-bottom: 50px;
+    }
+}
+
+.deal__container {
+    display: flex;
+    flex-direction: row;
+    @include breakpoint(touch) {
+        flex-direction: column;
+    }
+}
+
+.deal__image {
+    padding: 320px 0;
+    background-image: url("./src/assets/about/desktop/image-real-deal.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 45%;
+    border-radius: 0 15px 15px 0;
+    @include breakpoint(touch) {
+        padding: 160px 0;
+        border-radius: initial;
+        background-position: center center;
+        order: 1;
+    }
+}
+
+.deal__content {
+    flex-basis: 55%;
+    padding: 0 90px;
+    background-color: #fdf3f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    @include breakpoint(touch) {
+        border-radius: initial;
+        padding: 70px 0;
+        text-align: center;
+        order: 2;
+    }
+}
+
+.deal__title {
+    font-size: 40px;
+    color: $orange;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.deal__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #333136;
+    @include breakpoint(touch) {
+        max-width: 37ch;
+        margin: 0 auto;
+    }
+}

@@ -1,6 +1,6 @@
 FROM node
 WORKDIR /app
-COPY package.json .
+COPY ["package-lock.json", "package.json", "vite.config.js", "./"]
 RUN npm i
 COPY . .
 ## EXPOSE [Port you mentioned in the vite.config file]
