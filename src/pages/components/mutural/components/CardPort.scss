@@ -1,0 +1,94 @@
+@import '../../../../styles/component.scss';
+
+.card-port {
+    border-radius: 20px;
+    width: 340px;
+    height: 478px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+        transition: 0.3s ease;
+    }
+    &:active {
+        transition: 0.3s ease;
+        transform: scale(0.95);
+    }
+    @include breakpoint(touch){
+        height: initial;
+    }
+}
+
+.card-port__wrapper{
+    @include breakpoint(touch){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+
+.card-port__image-wrapper {
+    display: flex;
+}
+
+.card-port__image {
+    width: 340px;
+    height: auto;
+    border-radius: 20px 20px 0 0 ;
+    @include breakpoint(touch) {
+        border-radius: 20px 0 0 20px;
+    }
+}
+
+.card-port__blockquote {
+    text-align: center;
+    padding: 25px 43px;
+    background-color: #fdf3f0;
+    color: $white;
+    border-radius: 0 0 20px 20px;
+    transition: 0.3s ease;
+    @include breakpoint(touch) {
+        border-radius: 0 20px 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.card-port__blockquote--active {
+        background-color: $orange;
+        transition: 0.3s ease;
+        cursor: pointer;
+        transition: 0.3s ease;
+}
+
+.card-port__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    color: $orange;
+    transition: 0.3s ease;
+    @include breakpoint(touch) {
+        width: 340px;
+    }
+}
+
+.card-port__title--active {
+    color: $white;
+    transition: 0.3s ease;
+}
+
+.card-port__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    transition: 0.3s ease;
+}
+
+.card-port__text--active {
+    transition: 0.3s ease;
+    color: $white;
+}

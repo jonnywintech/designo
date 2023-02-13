@@ -1,3 +1,45 @@
-@import '../../../../styles/component.scss';
+@import "../../../../styles/component.scss";
 
-.
+.banner {
+    background-color: $orange;
+    color: $white;
+
+    text-align: center;
+    background-image: url("./src/assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-position-y: -170px;
+    background-position-x: -570px;
+    border-radius: 15px;
+    margin-bottom: 150px;
+    @include breakpoint(phone){
+        border-radius: initial;
+        margin-bottom: 80px;
+    }
+}
+
+.banner__container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(231,129,107);
+    background: linear-gradient(90deg, rgba(231,129,107,1) 0%, rgba(238,164,148,0.5) 31%, rgba(255,255,255,0) 100%);
+    border-radius: 15px;
+    @include breakpoint(phone){
+        border-radius: initial;
+        padding: 50px 15px;
+    }
+}
+
+.banner__title {
+    padding-bottom: 30px;
+    @include breakpoint(phone){
+        font-size: 42px;
+    }
+}
+
+.banner__text {
+    max-width: 40ch;
+    font-size: 16px;
+    line-height: 26px;
+}

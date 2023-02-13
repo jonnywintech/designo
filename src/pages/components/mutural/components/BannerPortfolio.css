@@ -45,21 +45,70 @@ button {
   border: none;
   background: none;
   height: 200px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 button:hover {
   cursor: pointer;
   background-color: #ffad9b;
   transform: scale(1.05);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 button:active {
   transform: scale(0.95);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .has-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.banner {
+  background-color: #e7816b;
+  color: #fff;
+  text-align: center;
+  background-image: url("./src/assets/shared/desktop/bg-pattern-call-to-action.svg");
+  background-position-y: -170px;
+  background-position-x: -570px;
+  border-radius: 15px;
+  margin-bottom: 150px;
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .banner {
+    border-radius: initial;
+    margin-bottom: 80px;
+  }
+}
+
+.banner__container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(231, 129, 107);
+  background: linear-gradient(90deg, rgb(231, 129, 107) 0%, rgba(238, 164, 148, 0.5) 31%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 15px;
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .banner__container {
+    border-radius: initial;
+    padding: 50px 15px;
+  }
+}
+
+.banner__title {
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .banner__title {
+    font-size: 42px;
+  }
+}
+
+.banner__text {
+  max-width: 40ch;
+  font-size: 16px;
+  line-height: 26px;
 }/*# sourceMappingURL=BannerPortfolio.css.map */

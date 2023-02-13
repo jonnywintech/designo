@@ -45,21 +45,35 @@ button {
   border: none;
   background: none;
   height: 200px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 button:hover {
   cursor: pointer;
   background-color: #ffad9b;
   transform: scale(1.05);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 button:active {
   transform: scale(0.95);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .has-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.web-design__card-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .web-design__card-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=WebDesign.css.map */

@@ -1,1 +1,14 @@
 @import '../../../styles/component.scss';
+
+.web-design__card-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:  20px;
+
+    @include breakpoint(touch) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
