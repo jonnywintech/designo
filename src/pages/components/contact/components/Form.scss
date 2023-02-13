@@ -1,0 +1,121 @@
+@import "../../../../styles/component.scss";
+
+.form {
+    background-color: $orange;
+    color: $white;
+    padding: 50px 80px;
+    border-radius: 15px;
+    margin-bottom: 120px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    @include breakpoint(touch) {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+.form__content {
+    flex-basis: 50%;
+    padding-right: 50px;
+    @include breakpoint(touch) {
+        padding-right: initial;
+    }
+}
+
+.form__headline {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    padding-bottom: 32px;
+}
+
+.form__text {
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 450px;
+}
+
+.form-form__container {
+    flex-basis: 50%;
+    padding-left: 10%;
+    @include breakpoint(touch) {
+        padding-left: initial;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.form__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 30px;
+}
+
+.form__field,
+.form__textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $white;
+    // text-indent: 10px;
+    font-size: 20px;
+    height: 24px;
+    color: $white;
+    transition: 0.3s ease;
+    padding-left: 10px;
+    &::placeholder {
+        color: rgba($color: #fff, $alpha: 0.7);
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+    }
+    &:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $white;
+        transition: 0.1s ease;
+    }
+}
+
+.form__textarea {
+    height: 56px;
+    &::-webkit-resizer {
+        color: #fff;
+    }
+}
+
+.form__submit {
+    width: 100px;
+    height: 40px;
+    background-color: $white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: auto;
+    margin-top: 40px;
+    transition: 0.3s ease-in-out;
+    @include breakpoint(touch) {
+        margin: 40px auto 0 auto;
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+
+    &:hover {
+        background-color: $btnHover;
+        transform: scale(1.05);
+        transition: 0.3s ease-in-out;
+    }
+
+    &:active {
+        transform: scale(0.95);
+        transition: 0.3s ease-in-out;
+    }
+}

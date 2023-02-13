@@ -45,21 +45,21 @@ button {
   border: none;
   background: none;
   height: 200px;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 button:hover {
   cursor: pointer;
   background-color: #ffad9b;
   transform: scale(1.05);
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 button:active {
   transform: scale(0.95);
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 
 .has-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-}/*# sourceMappingURL=component.css.map */
+}/*# sourceMappingURL=GraphicDesign.css.map */

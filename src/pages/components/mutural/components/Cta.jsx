@@ -14,8 +14,8 @@ const Cta = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <Link to='/contact'>
-              <button className='cta__button'>Get in touch</button>
+          <Link to='/contact-us'>
+              <button type='button' className='cta__button'>Get in touch</button>
           </Link>
         </div>
       </div>
