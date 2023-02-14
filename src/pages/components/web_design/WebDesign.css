@@ -75,5 +75,11 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .web-design__card-wrapper {
+    gap: 20px;
   }
 }/*# sourceMappingURL=WebDesign.css.map */

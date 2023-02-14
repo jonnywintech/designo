@@ -82,6 +82,14 @@ button:active {
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .card-port {
     height: initial;
+    width: initial;
+    height: initial;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .card-port {
+    width: 340px;
+    height: 478px;
   }
 }
 
@@ -90,6 +98,11 @@ button:active {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .card-port__wrapper {
+    flex-direction: column;
   }
 }
 
@@ -105,6 +118,11 @@ button:active {
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .card-port__image {
     border-radius: 20px 0 0 20px;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .card-port__image {
+    border-radius: 20px 20px 0 0;
   }
 }
 
@@ -123,6 +141,11 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+  .card-port__blockquote {
+    border-radius: 0 0 20px 20px;
   }
 }
 
@@ -158,6 +181,11 @@ button:active {
   line-height: 24px;
   color: #1d1c1e;
   transition: 0.3s ease;
+}
+@media only screen and (min-width: 120px) and (max-width: 1024px) {
+  .card-port__text {
+    width: 30ch;
+  }
 }
 
 .card-port__text--active {

@@ -5,6 +5,7 @@
     border-radius: 25px;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    position: relative;
     &:hover {
         transform: scale(1.05);
     }
@@ -54,6 +55,15 @@
         grid-row-start: 3;
         grid-row-end: 4;
     }
+}
+
+.card__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 }
 
 .card__container {

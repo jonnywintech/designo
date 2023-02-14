@@ -1,1 +1,10 @@
 @import '../../../styles/component.scss';
+
+.app-design__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}

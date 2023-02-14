@@ -9,7 +9,7 @@ const BannerPortfolio = () => {
     return data.title.replace(/\s+/g, '-').toLowerCase() === urlEnd;
   }).map((data) => {
     return (
-      <div className='banner'>
+      <div className='banner' key={data.id}>
         <div className='banner__container'>
           <h1 className='banner__title'>{data.title}</h1>
           <p className='banner__text'>{data.text}</p>

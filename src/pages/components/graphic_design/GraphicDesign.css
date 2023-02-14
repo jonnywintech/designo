@@ -45,21 +45,30 @@ button {
   border: none;
   background: none;
   height: 200px;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 button:hover {
   cursor: pointer;
   background-color: #ffad9b;
   transform: scale(1.05);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 button:active {
   transform: scale(0.95);
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease;
 }
 
 .has-cover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.graphic-design__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=GraphicDesign.css.map */

@@ -4,7 +4,7 @@ export default [
       id: 1,
       url: './src/assets/web-design/desktop/image-express.webp',
       title: 'Express',
-      text: 'A multi-carrier shipping website for  e-commerce businesses',
+      text: 'A multi-carrier shipping website for  ecommerce businesses',
     },
     {
       id: 2,
@@ -40,31 +40,31 @@ export default [
   [
     {
       id: 1,
-      url: '',
+      url: './src/assets/app-design/desktop/image-airfilter.webp',
       title: 'Airfilter',
       text: 'Solving the problem of poor indoor air quality by filtering the air',
     },
     {
       id: 2,
-      url: '',
+      url: './src/assets/app-design/desktop/image-eyecam.webp',
       title: 'Eyecam',
       text: 'Product that lets you edit your favorite photos and videos at any time',
     },
     {
       id: 3,
-      url: '',
+      url: './src/assets/app-design/desktop/image-faceit.webp',
       title: 'Faceit',
       text: 'Get to meet your favorite internet superstar with faceit app',
     },
     {
       id: 4,
-      url: '',
+      url: './src/assets/app-design/desktop/image-todo.webp',
       title: 'Todo',
       text: 'A todo app that features cloud sync with light and dark mode',
     },
     {
       id: 5,
-      url: '',
+      url: './src/assets/app-design/desktop/image-loopstudios.webp',
       title: 'Loopstudios',
       text: 'A VR experience app made for Loopstudios',
     },
@@ -72,19 +72,19 @@ export default [
   [
     {
       id: 1,
-      url: '',
+      url: './src/assets/graphic-design/desktop/image-change.webp',
       title: 'Airfilter',
       text: 'Solving the problem of poor indoor air quality by filtering the air',
     },
     {
       id: 2,
-      url: '',
+      url: './src/assets/graphic-design/desktop/image-boxed-water.webp',
       title: 'Eyecam',
       text: 'Product that lets you edit your favorite photos and videos at any time',
     },
     {
       id: 3,
-      url: '',
+      url: './src/assets/graphic-design/desktop/image-science.webp',
       title: 'Faceit',
       text: 'Get to meet your favorite internet superstar with faceit app',
     },
