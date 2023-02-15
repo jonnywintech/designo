@@ -64,10 +64,6 @@ button:active {
   background-position: center center;
 }
 
-.city__image {
-  background-image: url("./src/assets/shared/desktop/bg-pattern-small-circle.svg");
-}
-
 .city__container {
   display: flex;
   flex-direction: column;

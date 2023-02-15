@@ -19,7 +19,7 @@ const AboutUs = () => {
           </div>
           <div
             className='about-us__right-side'
-            style={{ background: aboutHero }}></div>
+            style={{ background: `url(${aboutHero})` }}></div>
         </div>
       </div>
     </div>

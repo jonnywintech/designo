@@ -2,6 +2,7 @@ import React from 'react';
 import './BannerPortfolio.css';
 import BannerData from '../../web_design/BannerData';
 
+
 const BannerPortfolio = () => {
   const urlEnd = window.location.href.split('/').at(-1);
   console.log(urlEnd);

@@ -22,7 +22,7 @@ const Deal = () => {
               to take action and drive real results.
             </p>
           </div>
-          <div className='deal__image' style={{background: realDeal }}></div>
+          <div className='deal__image' style={{background: `url(${realDeal}` }}></div>
         </div>
       </div>
     </div>

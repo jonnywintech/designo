@@ -9,7 +9,7 @@ const Talent = () => {
         <div className='talent__container'>
           <div
             className='talent__image'
-            style={{ background: wordClassTalent }}></div>
+            style={{ background: `url(${wordClassTalent})` }}></div>
           <div className='talent__content'>
             <h2 className='talent__title'>World-class talent</h2>
             <p className='talent__text'>
