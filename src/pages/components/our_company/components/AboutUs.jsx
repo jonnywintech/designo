@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutUs.css';
+import aboutHero from '/src/assets/about/desktop/image-about-hero.webp';
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,9 @@ const AboutUs = () => {
               and digital experiences that connect with our clients' audiences.
             </p>
           </div>
-          <div className='about-us__right-side'></div>
+          <div
+            className='about-us__right-side'
+            style={{ background: aboutHero }}></div>
         </div>
       </div>
     </div>

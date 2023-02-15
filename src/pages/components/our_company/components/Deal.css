@@ -85,7 +85,6 @@ button:active {
 
 .deal__image {
   padding: 320px 0;
-  background-image: url("./src/assets/about/desktop/image-real-deal.webp");
   background-size: cover;
   background-repeat: no-repeat;
   flex-basis: 45%;

@@ -80,7 +80,6 @@ button:active {
 
 .talent__image {
   padding: 320px 0;
-  background-image: url("./src/assets/about/desktop/image-world-class-talent.webp");
   background-size: cover;
   background-repeat: no-repeat;
   flex-basis: 45%;

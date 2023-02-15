@@ -1,12 +1,15 @@
 import React from 'react';
 import './Talent.css';
+import wordClassTalent from '/src/assets/about/desktop/image-world-class-talent.webp';
 
 const Talent = () => {
   return (
     <div className='talent'>
       <div className='wrap'>
         <div className='talent__container'>
-          <div className='talent__image'></div>
+          <div
+            className='talent__image'
+            style={{ background: wordClassTalent }}></div>
           <div className='talent__content'>
             <h2 className='talent__title'>World-class talent</h2>
             <p className='talent__text'>

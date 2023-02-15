@@ -1,5 +1,6 @@
 import React from 'react';
 import './Deal.css';
+import realDeal from '/src/assets/about/desktop/image-real-deal.webp';
 
 const Deal = () => {
   return (
@@ -21,7 +22,7 @@ const Deal = () => {
               to take action and drive real results.
             </p>
           </div>
-          <div className='deal__image'></div>
+          <div className='deal__image' style={{background: realDeal }}></div>
         </div>
       </div>
     </div>
