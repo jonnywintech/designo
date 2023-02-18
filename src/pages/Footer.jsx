@@ -19,7 +19,7 @@ const Footer = () => {
           <div className='footer__top'>
             <div className='footer__logo'>
               <Link to='/'>
-                <img src={logo} className='footer__logo-image' />
+                <img src={logo} className='footer__logo-image' alt='logo' />
               </Link>
             </div>
             <div className='footer__nav'>
@@ -64,19 +64,39 @@ const Footer = () => {
             </div>
             <div className='footer__social'>
               <Link to='/'>
-                <img src={icon.facebook} className='footer__icon' />
+                <img
+                  src={icon.facebook}
+                  className='footer__icon'
+                  alt='social-icon'
+                />
               </Link>
               <Link to='/'>
-                <img src={icon.youtube} className='footer__icon' />
+                <img
+                  src={icon.youtube}
+                  className='footer__icon'
+                  alt='social-icon'
+                />
               </Link>
               <Link to='/'>
-                <img src={icon.twitter} className='footer__icon' />
+                <img
+                  src={icon.twitter}
+                  className='footer__icon'
+                  alt='social-icon'
+                />
               </Link>
               <Link to='/'>
-                <img src={icon.pinterest} className='footer__icon' />
+                <img
+                  src={icon.pinterest}
+                  className='footer__icon'
+                  alt='social-icon'
+                />
               </Link>
               <Link to='/'>
-                <img src={icon.instagram} className='footer__icon' />
+                <img
+                  src={icon.instagram}
+                  className='footer__icon'
+                  alt='social-icon'
+                />
               </Link>
             </div>
           </div>

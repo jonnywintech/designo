@@ -21,18 +21,21 @@ const Form = () => {
               name='name'
               placeholder='Name'
               className='form__field'
+              required
             />
             <input
               type='email'
               name='email-address'
               placeholder='Email Address'
               className='form__field'
+              required
             />
             <input
               type='phone'
               name='phone'
               placeholder='Phone'
               className='form__field'
+              required
             />
             <textarea
               name='message'
@@ -40,7 +43,8 @@ const Form = () => {
               placeholder='Your message'
               cols='30'
               rows='7'
-              className='form__textarea'></textarea>
+              className='form__textarea'
+              required></textarea>
             <button type='submit' className='btn form__submit'>
               Submit
             </button>

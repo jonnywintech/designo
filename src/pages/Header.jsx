@@ -25,7 +25,7 @@ const Header = () => {
         <div className='header__container'>
           <div className='header__logo'>
             <Link to='/'>
-              <img src={logo} className='header__logo-image' />
+              <img src={logo} className='header__logo-image' alt='logo' />
             </Link>
           </div>
           <div className={showMenu?"header__burger-btn change":"header__burger-btn"} onClick={()=> toggleBurger()}>
