@@ -3,6 +3,8 @@ import BannerPortfolio from '../mutural/components/BannerPortfolio';
 import './GraphicDesign.css';
 import CardPortData from '../mutural/components/CardPortData';
 import CardPort from '../mutural/components/CardPort';
+import MoreProjects from '../mutural/components/MoreProjects';
+import Cta from '../mutural/components/Cta';
 
 const GraphicDesign = () => {
   const cards = CardPortData[2].map((data) => {
@@ -21,7 +23,9 @@ const GraphicDesign = () => {
       <div className="graphic-design__container">
         {cards}
       </div>
+      <MoreProjects />
     </div>
+      <Cta />
   </div>
 };
 

@@ -5,7 +5,6 @@ import bannerBg from '/src/assets/shared/desktop/bg-pattern-call-to-action.svg'
 
 const BannerPortfolio = () => {
   const urlEnd = window.location.href.split('/').at(-1);
-  console.log(urlEnd);
   const banner = BannerData.filter((data) => {
     return data.title.replace(/\s+/g, '-').toLowerCase() === urlEnd;
   }).map((data) => {
