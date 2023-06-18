@@ -191,6 +191,7 @@ button:active {
 
 .map-card__image {
   border-radius: 15px;
+  min-height: 322px;;
 }
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .map-card__image {
