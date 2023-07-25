@@ -8,7 +8,7 @@
 ---
 # Available scripts
 ```bash
-npm run start
+npm run dev
 ```
 ### Also available to build with Docker
 
