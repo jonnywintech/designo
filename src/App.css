@@ -144,6 +144,9 @@ body {
   padding: 0;
   font-family: "Jost", sans-serif;
   font-size: 14px;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
 }
 
 h1 {
@@ -199,4 +202,9 @@ button:active {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: local("../assets/font/Jost-VariableFont_wght.ttf");
 }/*# sourceMappingURL=App.css.map */

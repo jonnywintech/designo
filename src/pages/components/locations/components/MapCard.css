@@ -7,6 +7,9 @@ body {
   padding: 0;
   font-family: "Jost", sans-serif;
   font-size: 14px;
+  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -moz-user-select: none;
+       user-select: none; /* Standard syntax */
 }
 
 h1 {
@@ -191,8 +194,6 @@ button:active {
 
 .map-card__image {
   border-radius: 15px;
-  min-height: 320px;
-  min-width: 370px;
 }
 @media only screen and (min-width: 120px) and (max-width: 1024px) {
   .map-card__image {
