@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from  'react-router-dom';
+import { scrollToTop } from '../../../../globals/globals';
 import './Cta.css';
 
+
 const Cta = () => {
+
   return (
     <div className='cta'>
       <div className='wrap'>
@@ -15,7 +18,7 @@ const Cta = () => {
             </p>
           </div>
           <Link to='/contact-us'>
-              <button type='button' className='cta__button'>Get in touch</button>
+              <button onClick={scrollToTop}type='button' className='cta__button'>Get in touch</button>
           </Link>
         </div>
       </div>
