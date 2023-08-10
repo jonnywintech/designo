@@ -129,7 +129,12 @@
 
 .hero__image {
     z-index: 2;
+    position: relative;
+    width: 614px;
+    height: 913px;
     @include breakpoint(touch){
+        width: 100%;
+        height: 100%;
         position: relative;
         margin-bottom: -50%;
         margin-top: -10%;

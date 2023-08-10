@@ -11,7 +11,7 @@ export default function Card(props) {
         minHeight: props.maxHeight,
       }}
       className='card'>
-      <Link to={props.url} className='card__link'></Link>
+      <Link to={props.url} aria-label={props.title} className='card__link'></Link>
       <div className='card__container'>
         <h2 className='card__title'>{props.title}</h2>
         <span className='card__text'>{props.text}</span>
